@@ -1,9 +1,3 @@
----
-layout: post
-title: Generators With Golang Iterators
-tags: golang iterators generators
----
-
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)

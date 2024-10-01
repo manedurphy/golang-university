@@ -14,7 +14,7 @@ func getNumbers() iter.Seq[int] {
 		n := 20
 		for n <= 21 {
 			defer func() {
-				fmt.Println("deferred from iterator for loop")
+				fmt.Println("deferred from iterator for-loop")
 			}()
 
 			fmt.Printf("hello from iterator: n=%d\n", n)

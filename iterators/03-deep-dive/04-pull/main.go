@@ -24,14 +24,13 @@ func main() {
 	numbers := getNumbers()
 
 	next, stop := iter.Pull(numbers)
+	defer stop()
 
 	val, ok := next()
 	if !ok {
 		panic("not good")
 	}
 	fmt.Printf("num: %d\n", val)
-
-	stop()
 
 	val, ok = next()
 	if !ok {
